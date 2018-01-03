@@ -37,7 +37,7 @@ updates.use(async(context, next) => {
 });
 
 updates.on('message', async(context, next) => {
-  if (typeof context.text == 'string') {
+  if (typeof context.text == 'string' && /[a-zA-Z]*/i.test(context.text)) {
     let url = twitch.getUrl(context.text);
     if (typeof url == 'string') context.sendPhoto(url)
   }

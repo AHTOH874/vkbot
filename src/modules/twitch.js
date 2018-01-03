@@ -10,7 +10,9 @@ async function firstRun() {
     let global = await fse.readJson(pathGlob)
 
     Emoties = makeArray(subscriber, global);
-    ready++
+    delete subscriber;
+    delete global;
+    ready++ 
 }
 firstRun()
 
