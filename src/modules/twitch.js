@@ -3,8 +3,8 @@ let rp = require('request-promise')
 var request = require('request');
 var fse = require('fs-extra');
 var ready = 0
-let pathSubs = './src/modules/needful/subscriber.json';
-let pathGlob = './src/modules/needful/global.json'
+let pathSubs = __dirname + '/needful/subscriber.json';
+let pathGlob = __dirname + '/needful/global.json'
 async function firstRun() {
     let subscriber = await fse.readJson(pathSubs)
     let global = await fse.readJson(pathGlob)
@@ -12,7 +12,7 @@ async function firstRun() {
     Emoties = makeArray(subscriber, global);
     delete subscriber;
     delete global;
-    ready++ 
+    ready++
 }
 firstRun()
 

@@ -1,10 +1,10 @@
 'use strict';
-const config = require('./src/config');
+const config = require(__dirname + '/src/config');
 
 
-const getWither = require('./src/modules/wither');
-const getShedule = require('./src/modules/shedule');
-const twitch = require('./src/modules/twitch');
+const getWither = require(__dirname + '/src/modules/wither');
+const getShedule = require(__dirname + '/src/modules/shedule');
+const twitch = require(__dirname + '/src/modules/twitch');
 
 const {
   VK
