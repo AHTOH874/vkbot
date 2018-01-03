@@ -44,9 +44,7 @@ updates.on('message', async(context, next) => {
   await next()
 });
 
-updates.hear('/hi', async(context) => {
-  await context.send('Hi!');
-});
+
 updates.hear('/time', async(context) => {
   await context.send((new Date).toString());
 });

@@ -1,6 +1,6 @@
 {
   "name": "vkbot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "vkBot",
   "main": "index.js",
   "scripts": {
