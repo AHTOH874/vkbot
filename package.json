@@ -4,7 +4,10 @@
   "description": "vkBot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard --fix && node index.js"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
   },
   "author": "AHTOH MELHOB",
   "license": "MIT",
